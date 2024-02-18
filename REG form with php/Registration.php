@@ -17,19 +17,7 @@
                                 <th> First Name <br><br></th>
                                 <td> 
                                 <?php 
-                                    $isValid = true;
-
-                                    if(empty($fname))
-                                    {
-                                        echo "Please fillup the name" . "<br>";
-                                        $isValid = false;
-                                    }
-
-                                    if($isValid===true)
-                                    {
-                                        echo $fname  = $_POST['fname']; 
-                                    }
-                                 
+                                    echo $fname  = $_POST['fname']; 
                                 ?>
                                 <br><br> </td>
                             </tr>
