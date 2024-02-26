@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+    </head>
+    <body>
+        <h1>Registration</h1>
+        <form action = "Registration.php" method = "POST" novalidate>
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>General Information</legend> <br/>
+                        <table style="width:25%;">
+            
+                            <tr>
+                                <th> First Name <br><br></th>
+                                <td> <input type="text" id="fname" name="fname" value=""> <br><br> </td>
+                            </tr>
+                
+                            <tr>
+                                <th> Last Name <br><br> </th>
+                                <td> <input type="text" name="lname" value=""> <br><br>  </td>
+                            </tr>
+            
+                            <tr>
+                                <th> Gender <br><br> </th>
+                                <td> <input type="radio" id="Male" name="Gender" value="Male">
+                                 <label for = "Male">Male</label>
+                                 <input type="radio" id="Female" name="Gender" value="Female"> 
+                                 <label for = "Female" > Female </label> <br><br>  </td>
+                            </tr>
+            
+                            <tr>
+                                <th> Father's Name <br><br> </th>
+                                <td> <input type="text" id="fnam" name="fnam" value=""> <br><br>  </td>
+                            </tr>
+            
+                            <tr>
+                                <th> Mother's Name <br><br> </th>
+                                <td> <input type="text" id="mnam" name="mnam" value=""/> <br><br>  </td>
+                            </tr>
+            
+                            <tr>
+                                <th> Blood Group <br><br> </th>
+                                <td> <label for="Blood"></label> 
+                                    <select id ="Blood" name="Blood">
+                                        <option value=""></option>
+                                        <option value="A+">A+</option>
+                                        <option value="B+">B+</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="O+">O+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B-">B-</option>
+                                        <option value="AB-">AB-</option>
+                                        <option value="O-">O-</option>
+                                    </select><br><br> 
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <th> Religion <br><br> </th>
+                                <td> <label for="Religion"></label> 
+                                    <select id ="Religion" name="Religion">
+                                        <option value=""></option>
+                                        <option value="Islam">Islam</option>
+                                        <option value="Hindu">Hindu</option>
+                                        <option value="Christan">Christan</option>
+                                        <option value="Buddhism">Buddhism</option>
+                                    </select><br><br> 
+                                </td>
+                            </tr>
+                        
+                        </table>
+                        
+                    </fieldset>
+                </td>
+            <!--/tr>
+            
+            <tr-->
+                <td>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <table style="width: 25%;">
+                            <tr>
+                                <th> Email <br><br> </th>
+                                <td> <input type="text" id="email" name="email" > <br><br>  </td>
+                            </tr>
+            
+                            <tr>
+                                <th> Phone/Mobile <br><br> </th>
+                                <td> <!--input type="tel" id="phone" name="phone" placeholder="+880 XXXX-XXXXXX" pattern = "[+880]{4}[1]{1}[0-9]{3}-[0-9]{6}" required--> 
+                                    <input type="text" id="pnumber" name="pnumber" placeholder="+880 XXXX-XXXXXX"><br><br> </td>
+                            </tr>
+            
+                            <tr>
+                                <th> Website <br><br> </th>
+                                <td> <!--input type="url" name="web" value=""-->
+                                    <input type="text" name="web" value=""> <br><br>  </td>
+                            </tr>
+            
+                            <tr>
+                                <th> Address </th>
+                                <td>
+                                    <fieldset>
+                                        <legend>Permanent Address</legend>
+                                        <table style="width: 50%;">
+                                            <tr> 
+                                                <td>
+                                                    <select id ="Country" name="Country">
+                                                        <option value=""></option>
+                                                        <option value="Bangladesh">Bangladesh</option>
+                                                        <option value="china">China</option>
+                                                        <option value="America">America</option>
+                                                        <option value="Canada">Canada</option>
+                                                    </select>
+                                                <!--/td>
+                                                <td-->
+                                                    <select id ="State" name="State">
+                                                        <option value=""></option>
+                                                        <option value="Dhaka">Dhaka</option>
+                                                        <option value="Chittagong">Chittagong</option>
+                                                        <option value="Khulna">Khulna</option>
+                                                        <option value="Rajshahi">Rajshahi</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <textarea name="message" rows="10" cols="30" placeholder="Road/street/city"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="number" id="number" name="number" placeholder="post code"><br></td>
+                                            </tr>
+                                        </table>
+                                        
+                                    </fieldset>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            <!--/tr>
+    
+            
+            <tr-->
+                <td>
+                    <fieldset>
+                        <legend>Account Information</legend>
+                        <table style="width: 25%;">
+                            <tr>
+                                <th> Username <br><br> </th>
+                                <td> <input type="text" id="text" name="text" > <br><br>  </td>
+                            </tr>
+                            <tr>
+                                <th> Password <br><br> </th>
+                                <td> <input type="password" id="Password" name="Password" > <br><br>  </td>
+                            </tr>
+                            <tr>
+                                <th> Confirm Password <br><br> </th>
+                                <td> <input type="password" id="CPassword" name="CPassword" > <br><br>  </td>
+                            </tr>
+                        </table>
+                    </fieldset><br><br>
+                    <input type="submit" value="Registration">
+                </td>
+                
+                    
+                
+            </tr>
+    
+            
+
+        </table>
+        </form>
+
+        
+
+            
+    </body>
+</html>
